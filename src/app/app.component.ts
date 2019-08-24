@@ -7,6 +7,7 @@ import { QuoteBlueP } from './quote-blue-p';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title='quote it';
   quotes:QuoteBlueP [] = [
     { id: 1, name: 'You Only Live Once', authorName: 'Mae West', publishedName: 'Aline Nicole U'},
     { id: 2, name: 'Attitude is a Choice', authorName: 'Roy T. Bennett', publishedName: 'Aline Nicole U' },
