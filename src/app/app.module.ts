@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import {Quote} from './QuoteBlueP';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { QuoteChildComponent } from './quote-child/quote-child.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuoteChildComponent
   ],
   imports: [
     BrowserModule,
