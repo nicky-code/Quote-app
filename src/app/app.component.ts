@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quote = 'You Only Live Once'
+  quotes:string[];
+
+  constructor(){
+    this.quotes = ['You Only Live Once','Attitude is a  Choice', 'Life is just a Chance to Grow a Soul'];
+  }
+  
 }
