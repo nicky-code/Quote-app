@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuoteComponent } from './quote.component';
+import { QuoteBluePComponent } from './quote.component';
 
 describe('QuoteComponent', () => {
-  let component: QuoteComponent;
-  let fixture: ComponentFixture<QuoteComponent>;
+  let component: QuoteBluePComponent;
+  let fixture: ComponentFixture<QuoteBluePComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuoteComponent ]
+      declarations: [ QuoteBluePComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QuoteComponent);
+    fixture = TestBed.createComponent(QuoteBluePComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
