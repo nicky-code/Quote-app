@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { QuoteBlueP} from '../quote-blue-p';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
@@ -7,13 +8,20 @@ import { QuoteBlueP} from '../quote-blue-p';
 })
 export class QuoteComponent implements OnInit {
   quotes: QuoteBlueP [] = [
-    { id: 1, name: 'You Only Live Once', authorName: 'Mae West',  publishedName: 'Aline Nicole U'},
-    { id: 2, name: 'Attitude is a Choice', authorName: 'Roy T. Bennett',  publishedName: 'Aline Nicole U'},
-    { id: 3, name: 'Life is just a Chance to Grow a Soul', authorName: ' Gwen Randall-Young',  publishedName: 'Aline Nicole U'},
+    new QuoteBlueP(1, 'You Only Live Once', 'Mae West', 'Aline Nicole U'),
+    new QuoteBlueP(2, 'Attitude is a Choice', 'Roy T. Bennett', 'Aline Nicole U'),
+    new QuoteBlueP(3, 'Life is just a Chance to Grow a Soul', ' Gwen Randall-Young', 'Aline Nicole U'),
   ];
+  toggleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+  completeQuote(isComplete, index) {
+    if (isComplete) {
+      this.quotes.splice(index, 1);
+    }
+  }
 
-  constructor() {
-   }
+  constructor() {}
 
   ngOnInit() {
   }

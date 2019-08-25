@@ -12,7 +12,6 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
     AppComponent,
     QuoteComponent,
     QuoteDetailComponent,
-    
   ],
   imports: [
     BrowserModule,

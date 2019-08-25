@@ -1,6 +1,6 @@
 export class QuoteBlueP {
-    id: number;
-    name: string;
-    authorName: string;
-    publishedName: string;
+    showDescription: boolean;
+    constructor(public id: number, public name: string, public authorName: string, public publishedName: string){
+      this.showDescription = false;
+    }
 }
