@@ -1,0 +1,10 @@
+input[type=text]{
+    width:50%;
+}
+textarea{
+    width: 50%;
+}
+#added{
+    border-radius: 7px;
+    background-color: rgb(231, 195, 13);
+}
