@@ -49,3 +49,13 @@ Your project should have regular, well-defined commits with clear messages.
 
 ## Output Examples
 you will get what you have inputed.
+
+## Technology used
+Angular CLI, Bootstrap, Typescript , HTML , CSS,
+
+## My link repository
+https://github.com/nicky-code/Quote-app
+
+## Title Licence
+Copyright(c)2019 Aline Nicole UWAMARIYA
+
