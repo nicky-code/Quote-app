@@ -8,7 +8,7 @@ import { QuoteBlueP} from '../quote-blue-p';
 })
 export class QuoteFormComponent implements OnInit {
   // tslint:disable-next-line: new-parens
-  newQuote = new QuoteBlueP(0 , ' ', ' ', ' ', new Date());
+  newQuote = new QuoteBlueP(0 , ' ', ' ', ' ',  new Date());
   @Output() addQuote = new EventEmitter<QuoteBlueP>();
    submitQuote() {
      this.addQuote.emit(this.newQuote);

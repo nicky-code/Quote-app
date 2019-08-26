@@ -5,7 +5,7 @@
 
         <div *ngFor= 'let quote of quotes;let i = index'>
           <div>
-            <p>{{quote.name}}, {{quote.authorName}}, {{quote.publishedName}} due on {{quote.completeDate|date|uppercase}}</p>
+          <p>{{quote.description}} due on {{quote.completeDate|date|uppercase}}</p>
             <button (click)='toggleDetails(i)' class="btn btn-success">Toggle Details</button>
           </div>
           <div  *ngIf='quote.showDescription'>

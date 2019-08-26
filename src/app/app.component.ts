@@ -7,4 +7,8 @@ import { QuoteBlueP } from './quote-blue-p';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  quotes: QuoteBlueP [] = [
+    new QuoteBlueP(1, 'Aline Nicole U', 'Mae West', 'You Only Live Once', new Date (2019, 8, 25)),
+
+  ];
 }
