@@ -15,7 +15,6 @@ upvotes = 0;
 downVotes = 0;
 
 totalUpvotes() {
-  // console.log("ok")
   this.quote.upVotes++;
 }
 
