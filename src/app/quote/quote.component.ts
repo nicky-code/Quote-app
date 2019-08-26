@@ -17,8 +17,14 @@ export class QuoteComponent implements OnInit {
   }
   completeDel(isComplete, index) {
     if (isComplete) {
-      this.quotes.splice(index, 1);
+      const toDelete = confirm(`Do you really want to delete ${this.quotes[index].name}?`);
+
+      if (toDelete) {
+        this.quotes.splice(index, 1);
+      }
+
     }
+
   }
   addNewQuote(quote) {
     const quoteLength = this.quotes.length;
