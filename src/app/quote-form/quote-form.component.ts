@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { QuoteBlueP} from '../quote-blue-p';
+import { from } from 'rxjs';
+import { Quote } from '@angular/compiler';
 
 @Component({
   selector: 'app-quote-form',
@@ -6,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
+  // tslint:disable-next-line: new-parens
+  // newQuote = new Quote(any , ' ', ' ', new Date());
+  @Output() addQuote = new EventEmitter<Quote>();
 
   constructor() { }
 

@@ -3,5 +3,11 @@
     {{quote.authorName}}
     {{quote.publishedNmame}}
 </p>
-<button (click) = 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
+
 <p>{{goal.completeDate|dateCount}} days</p>
+<p><b>Upvotes:</b>{{upvotes}}</p>
+<p><b>Downvotes:</b>{{downvotes}}</p>
+
+<button (click) = 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
+<button (click) = 'totalUpvotes()'><b>Upvote</b></button>
+<button (click) = 'totalDownvotes()'><b>Downvote</b></button>

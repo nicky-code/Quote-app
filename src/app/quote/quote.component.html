@@ -1,9 +1,8 @@
 
 <div class="quoted">
-    <h1>QUOTE her!</h1>
+    <h1>QUOTE it!</h1>
     <h2> Welcome to Quote-Application, Enjoy quoting with Us!</h2>
-    <!-- <div class="row"> -->
-      <!-- <div class="col-md-6"> -->
+
         <div *ngFor= 'let quote of quotes;let i = index'>
           <div>
             <p>{{quote.name}}, {{quote.authorName}}, {{quote.publishedName}} due on {{quote.completeDate|date|uppercase}}</p>
@@ -13,9 +12,6 @@
             <app-quote-detail [quote]='quote' (isComplete) = 'completeDel($event,i)'></app-quote-detail>
           </div>   
         </div>
-    </div>
-    <!-- <div class="col-md-6"> -->
         <app-quote-form></app-quote-form>
-    <!-- </div> -->
-  <!-- </div> -->
-  <!-- </div> -->
+    </div>
+   

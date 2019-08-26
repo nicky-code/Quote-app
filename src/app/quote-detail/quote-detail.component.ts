@@ -6,14 +6,26 @@ import { QuoteBlueP } from '../quote-blue-p';
   styleUrls: ['./quote-detail.component.css']
 })
 export class QuoteDetailComponent implements OnInit {
+  constructor() { }
 
 @Input() quote: QuoteBlueP;
 @Output() isComplete = new EventEmitter<boolean>();
 
+upvotes = 0;
+downVotes = 0;
+
+totalUpvotes() {
+  this.upvotes++;
+}
+
+totalDownvotes() {
+  this.downVotes++;
+}
+
+
 quoteDelete(complete: boolean) {
   this.isComplete.emit(complete);
 }
-  constructor() { }
 
   ngOnInit() {
   }
