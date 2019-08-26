@@ -10,8 +10,8 @@ import { Quote } from '@angular/compiler';
 })
 export class QuoteFormComponent implements OnInit {
   // tslint:disable-next-line: new-parens
-  // newQuote = new Quote(any , ' ', ' ', new Date());
-  @Output() addQuote = new EventEmitter<Quote>();
+  newQuote = new QuoteBlueP(0 , ' ', ' ', ' ', new Date());
+  @Output() addQuote = new EventEmitter<QuoteBlueP>();
 
   constructor() { }
 

@@ -15,11 +15,12 @@ upvotes = 0;
 downVotes = 0;
 
 totalUpvotes() {
-  this.upvotes++;
+  // console.log("ok")
+  this.quote.upVotes++;
 }
 
 totalDownvotes() {
-  this.downVotes++;
+  this.quote.downVotes++;
 }
 
 
